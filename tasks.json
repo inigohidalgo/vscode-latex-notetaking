@@ -6,7 +6,7 @@
         {
             "label": "copy and open template",
             "type": "shell",
-            "command": "~/vscode-notetaking/vscode-latex-notetaking/copy-and-open-template.sh $(echo ${selectedText}|tr ' ' '-')"
+            "command": "~/vscode-notetaking/vscode-latex-notetaking/copy-and-open-template.sh $(echo ${selectedText}|tr ' ' '-') '${fileDirname}'"
         },
         {
             "label": "echo selection",
