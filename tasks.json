@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "copy and open template",
+            "type": "shell",
+            "command": "~/vscode-notetaking/vscode-latex-notetaking/copy-and-open-template.sh $(echo ${selectedText}|tr ' ' '-')"
+        },
+        {
+            "label": "echo selection",
+            "type": "shell",
+            "command": "echo ${selectedText}|tr ' ' '-'"
+        }
+    ]
+}
