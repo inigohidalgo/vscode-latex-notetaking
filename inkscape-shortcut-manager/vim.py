@@ -6,6 +6,7 @@ from clipboard import copy
 from config import config
 from Xlib import X
 
+
 def open_vim(self, compile_latex):
     f = tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.tex')
 
@@ -26,7 +27,7 @@ def open_vim(self, compile_latex):
             <svg>
               <text
                  style="font-size:{config['font_size']}px; font-family:'{config['font']}';-inkscape-font-specification:'{config['font']}, Normal';fill:#000000;fill-opacity:1;stroke:none;"
-                 xml:space="preserve"><tspan sodipodi:role="line" >{latex}</tspan></text>
+                 xml:space="preserve"><tspan sodipodi:role="line">{latex}</tspan></text>
             </svg> """
             copy(svg, target=TARGET)
         else:
