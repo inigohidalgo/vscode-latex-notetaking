@@ -1,1 +1,1 @@
-TARGET = 'image/x-inkscape-svg'
+TARGET = "image/x-inkscape-svg"
